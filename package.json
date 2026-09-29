@@ -9,7 +9,7 @@
     "fmt": "oxfmt",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

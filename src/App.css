@@ -1,0 +1,83 @@
+main {
+  display: flex;
+  min-height: 100svh;
+}
+
+.board-area {
+  display: flex;
+  width: 75%;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.board {
+  display: flex;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  flex-direction: column-reverse;
+  flex: 1;
+}
+
+.board-stats {
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.cell {
+  position: relative;
+  display: grid;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  flex: 1;
+  place-items: center;
+}
+
+.cell-num {
+  position: absolute;
+  font-size: 12px;
+  top: 2px;
+  left: 2px;
+}
+
+.teleport-num {
+  position: absolute;
+  font-size: 12px;
+  top: 2px;
+  right: 2px;
+}
+
+.teleport-up {
+  color: green;
+}
+
+.teleport-down {
+  color: red;
+}
+
+.player {
+  display: grid;
+  width: 25%;
+  aspect-ratio: 1;
+  background-color: rgb(106, 106, 194);
+  border-radius: 9999px;
+  place-items: center;
+}
+
+aside {
+  width: 25%;
+  border-left: 1px solid var(--border);
+  padding: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
