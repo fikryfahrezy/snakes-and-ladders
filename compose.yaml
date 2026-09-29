@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:80"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "8081:80"
